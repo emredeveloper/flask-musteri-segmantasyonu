@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Customer Segment Result</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container mt-5">
+		<h1 class="text-center">Customer Segment Result</h1>
+		<div class="card mt-5">
+			<div class="card-header">
+				<h2>Your Segment:</h2>
+			</div>
+			<div class="card-body">
+				{% if age_group == 'Genç' %}
+				<h3 class="text-center">You belong to the young age group.</h3>
+				{% elif age_group == 'Orta yaşlı' %}
+				<h3 class="text-center">You belong to the middle-aged group.</h3>
+				{% elif age_group == 'Yaşlı' %}
+				<h3 class="text-center">You belong to the older age group.</h3>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</body>
+</html>
